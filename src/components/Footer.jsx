@@ -8,7 +8,7 @@ const Footer = () => {
                 {/* Column 1: Contact Form */}
                 <div>
                     <h2 className="text-2xl font-semibold mb-6">Contact Us</h2>
-                    <form className="space-y-4">
+                    <form className="space-y-4 text-left">
                         <div>
                             <label className="block text-sm mb-1">Name <span className="text-red-500">*</span></label>
                             <input type="text" className="w-full p-2 bg-white text-black rounded shadow-inner outline-none" />
@@ -40,27 +40,14 @@ const Footer = () => {
                 {/* Column 2: Map & Title */}
                 <div className="flex flex-col items-center">
                     <h2 className="text-2xl font-semibold mb-6">Find Us</h2>
-                    <div className="w-full aspect-square bg-gray-300 rounded overflow-hidden relative border-4 border-gray-600">
+                    <div className="w-full aspect-square rounded overflow-hidden relative">
                         {/* Replace with actual Google Maps Iframe if needed */}
-                        {/* <iframe
-                            title="Location Map"
-
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d600734.7486825886!2d76.718111!3d9.132398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0611e606b00001%3A0x27dc62f29d54f358!2sCollege%20Of%20Engineering%2C%20Adoor!5e1!3m2!1sen!2sus!4v1770880419853!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                            className="w-full h-full border-0"
-                            // allowFullScreen=""
-                            
-                        ></iframe> */}
-
                         <iframe
-                            title="Location Map"
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d600734.7486825886!2d76.718111!3d9.132398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0611e606b00001%3A0x27dc62f29d54f358!2sCollege%20Of%20Engineering%2C%20Adoor!5e1!3m2!1sen!2sus!4v1770880419853!5m2!1sen!2sus"
-                            className="w-full h-full border-0"
-                            allowFullScreen=""
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d80505.44769300119!2d76.72876879386149!3d9.140990686670904!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0611e606b00001%3A0x27dc62f29d54f358!2sCollege%20Of%20Engineering%2C%20Adoor!5e0!3m2!1sen!2sin!4v1770889228814!5m2!1sen!2sin"
+                            allowfullscreen=""
                             loading="lazy"
-                        ></iframe>
-                        <div className="absolute bottom-10 left-0 right-0 bg-black/80 text-white text-center py-2 font-medium">
-                            College of Engineering Adoor
-                        </div>
+                            className="w-full h-full border-0">
+                            </iframe>
                     </div>
                 </div>
 
@@ -70,11 +57,11 @@ const Footer = () => {
                         <h2 className="text-2xl font-semibold mb-6">Other Links</h2>
                         <div className="space-y-3">
                             {[
-                                { name: 'KTU', img: 'https://via.placeholder.com/30' },
-                                { name: 'IHRD', img: 'https://via.placeholder.com/30' },
-                                { name: 'Govt. of Kerala', img: 'https://via.placeholder.com/30' },
-                                { name: 'AICTE', img: 'https://via.placeholder.com/30' },
-                                { name: 'Dept. of Higher Education', img: 'https://via.placeholder.com/30' }
+                                { name: 'KTU', img: '/images/logos/KTU-logo.png' },
+                                { name: 'IHRD', img: '/images/logos/IHRD-logo.png' },
+                                { name: 'Govt. of Kerala', img: '/images/logos/kerala-gov-logo.png' },
+                                { name: 'AICTE', img: '/images/logos/AICTE-logo.webp' },
+                                { name: 'Dept. of Higher Education', img: '/images/logos/kerala-gov-logo.png' }
                             ].map((link) => (
                                 <a key={link.name} href="#" className="flex items-center gap-4 bg-white text-black p-3 rounded hover:bg-gray-100 transition-colors shadow-md">
                                     <img src={link.img} alt={link.name} className="w-8 h-8 object-contain" />
