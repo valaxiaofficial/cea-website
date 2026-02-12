@@ -24,7 +24,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <a href="/">
           <img
-            src="public/images/cea-logo-black.png"
+            src="/public/images/cea-logo-black.png"
             className='w-45 md:w-50'
             alt="cea-logo" />
         </a>
