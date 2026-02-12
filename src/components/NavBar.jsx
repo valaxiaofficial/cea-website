@@ -50,7 +50,7 @@ const Navbar = () => {
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Principal</li>
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Office Administration</li>
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Audit</li>
-                  <a href="https://ihrd.ac.in/index.php/orders-gos">
+                  <a href="https://ihrd.ac.in/index.php/orders-gos" target="_blank" rel="noopener noreferrer">
                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Service Rules</li>
                   </a>
                 </ul>
@@ -70,7 +70,9 @@ const Navbar = () => {
               {openDropdown === 'Academics' && (
                 <ul className="absolute top-full left-0 w-48 bg-white shadow-lg rounded-md py-2 z-50">
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">College Committees</li>
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Campus Rules</li>
+                  <a href="/public/database/Campus-rules.pdf" target="_blank" rel="noopener noreferrer">
+                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer" >Campus Rules</li>
+                  </a>
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">IQAC</li>
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">KTU Website</li>
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">AICTE Website</li>
